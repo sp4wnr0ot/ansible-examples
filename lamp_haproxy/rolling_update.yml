@@ -45,7 +45,7 @@
   - name: wait for webserver to come up
     wait_for: 
       host: "{{ inventory_hostname }}" 
-      port: 80 
+      port: "{{ httpd_port }}" 
       state: started 
       timeout: 80
 
