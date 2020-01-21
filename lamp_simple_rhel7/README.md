@@ -30,3 +30,8 @@ command:
 Once done, you can check the results by browsing to http://localhost/index.php.
 You should see a simple test page and a list of databases retrieved from the
 database server.
+
+
+Playbook adpated for Ansible Tower usability, by Raul leite <raul@redhat.com>
+- removed 'hosts' files
+- added tag 'all' in the "host in groups['all']" index.php.j2 file
