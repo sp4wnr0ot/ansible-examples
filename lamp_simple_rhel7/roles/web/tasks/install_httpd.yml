@@ -13,6 +13,11 @@
   with_items:
    - git
 
+- name: Restart service DBUS
+  service:
+    name: dbus
+    state: restarted
+
 - name: Start firewalld
   service: name=firewalld state=started enabled=yes
 
